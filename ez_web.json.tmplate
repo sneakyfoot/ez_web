@@ -1,0 +1,17 @@
+{
+    "recommends": "houdini_version >= '17.5.321'",
+
+    "env": [
+        {
+            "EZ_WEB": "yourCloneDir",
+        },
+        {
+            "EZ_WEB_OTL": "$EZ_WEB/otls",
+        }
+        {
+            "HOUDINI_OTLSCAN_PATH": "$EZ_WEB_OTL/base:$HOUDINI_OTLSCAN_PATH",
+        },
+    ],
+
+    "path": "$EZ_WEB",
+}
