@@ -3,15 +3,16 @@
 
     "env": [
         {
-            "EZ_WEB": "yourCloneDir",
+            "EZ_WEB": "your/clone/dir"
         },
         {
-            "EZ_WEB_OTL": "$EZ_WEB/otls",
+            "PATH": {
+                "method": "prepend",
+                "value": [
+                    "$EZ_WEB/bin"
+                ]
+            }
         }
-        {
-            "HOUDINI_OTLSCAN_PATH": "$EZ_WEB_OTL/base:$HOUDINI_OTLSCAN_PATH",
-        },
     ],
-
-    "path": "$EZ_WEB",
+    "path": "$EZ_WEB"
 }
